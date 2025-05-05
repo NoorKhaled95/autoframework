@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Old Events - 'Doctors' Paid Auto Approved, Customize Badge">
+    <suite-files>
+        <suite-file path="Setup.xml"/>
+        <!--        Doctors Persona-->
+        <suite-file path="customize-badge.xml"/>
+        <suite-file path="../../../TearDown.xml"/>
+    </suite-files>
+</suite>

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Old Events - 'VIP' Paid Pre Approved, Auto Print Test">
+    <suite-files>
+        <suite-file path="Setup.xml"/>
+<!--        VIP Persona-->
+        <suite-file path="auto-print.xml"/>
+        <suite-file path="../../../TearDown.xml"/>
+    </suite-files>
+</suite>

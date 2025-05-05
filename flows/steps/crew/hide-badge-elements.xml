@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Customize Badge - Hide Elements">
+    <listeners>
+        <listener class-name="configs.listeners.Listener"/>
+        <listener class-name="configs.listeners.TimeoutExceptionListener"/>
+    </listeners>
+    <test name="Hide Badge Elements And Save Test">
+        <classes>
+            <class name="tests.crew.customizeBadge.HideElementsTest"/>
+        </classes>
+    </test>
+</suite>

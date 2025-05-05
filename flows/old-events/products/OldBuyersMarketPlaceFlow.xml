@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Setup For Old Events - In-person Products Event 'Buyers' Persona">
+    <suite-files>
+<!--        Setup-->
+        <suite-file path="Setup.xml"/>
+        <suite-file path="products-cart.xml"/>
+<!--        Buyers Persona-->
+        <suite-file path="register-pay-revolut.xml"/>
+        <suite-file path="products-crew-registration.xml"/>
+<!--        Close-->
+        <suite-file path="../../TearDown.xml"/>
+    </suite-files>
+</suite>

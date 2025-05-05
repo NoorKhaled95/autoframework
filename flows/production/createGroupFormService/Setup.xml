@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SETUP AND LOAD TEST DATA">
+    <test name="Setup Upcoming Events Tests">
+        <parameter name="url" value="https://api.staging.micetribe.com/v3/plan/admin/group_form/"/>
+        <parameter name="language" value="English"/>
+        <parameter name="browser" value="firefox"/>
+        <parameter name="branch" value="staging"/>
+        <parameter name="flow" value="create_group_form"/>
+        <classes>
+            <class name="base.Setup">
+                <methods>
+                    <include name="setUpLocalDriver"/>
+                    <exclude name="setUpRemoteDriver"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

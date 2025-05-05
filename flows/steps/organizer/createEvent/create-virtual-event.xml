@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Create virtual Event">
+    <listeners>
+        <listener class-name="configs.listeners.Listener"/>
+        <listener class-name="configs.listeners.TimeoutExceptionListener"/>
+    </listeners>
+    <test name="Create virtual Event">
+        <classes>
+            <class name="tests.organizer.workspacesPage.WorkSpacesPageTest"/>
+            <class name="tests.organizer.eventsTimeline.EventsPageUITest"/>
+            <class name="tests.organizer.brandAndDatePage.BrandAndDatePageTest">
+                <methods>
+                    <exclude name="InputSpecialNote"/>
+                </methods>
+            </class>
+            <class name="tests.organizer.eventFormat.formatSection.EventFormatSectionUITest"/>
+            <class name="tests.organizer.eventFormat.virtualEvent.AddVirtualServiceTest"/>
+        </classes>
+    </test>
+</suite>

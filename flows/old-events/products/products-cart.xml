@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Old Event - Products Cart">
+    <listeners>
+        <listener class-name="configs.listeners.Listener"/>
+        <listener class-name="configs.listeners.TimeoutExceptionListener"/>
+    </listeners>
+    <test name="Sign in to planning">
+        <classes>
+            <class name="tests.organizer.signup.SignInTest"/>
+            <class name="tests.organizer.workspacesPage.WorkSpacesPageTest"/>
+        </classes>
+    </test>
+
+    <test name="Search for 'md products' event">
+        <classes>
+            <class name="tests.organizer.eventsTimeline.SearchMainEntityEventTest"/>
+        </classes>
+    </test>
+
+    <test name="Share 'Buyers' landing page registration link">
+        <classes>
+            <class name="tests.organizer.eventsTimeline.ShareEventFromCardTest"/>
+        </classes>
+    </test>
+
+    <test name="Products page test">
+        <classes>
+            <class name="tests.organizer.products.AddToCartTest"/>
+        </classes>
+    </test>
+    <test name="Products Items Management Test">
+        <classes>
+            <class name="tests.organizer.products.CartTest"/>
+        </classes>
+    </test>
+    <test name="Promo Codes Test">
+        <classes>
+            <class name="tests.organizer.products.PromoCodesTest"/>
+        </classes>
+    </test>
+
+</suite>

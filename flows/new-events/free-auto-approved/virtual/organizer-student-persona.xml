@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--suite tests-->
+<!--1. With Student Persona-->
+<!--    a . With Gender Field-->
+<!--2. Adding Speaker Persona-->
+<!--    a . With passcode-->
+
+<suite name="Virtual Event - Student Free Auto Approved Personas, Online Register and Info">
+    <listeners>
+        <listener class-name="configs.listeners.Listener"/>
+        <listener class-name="configs.listeners.TimeoutExceptionListener"/>
+    </listeners>
+    <suite-files>
+        <suite-file path="../../../steps/organizer/sign/signup-as-organizer.xml"/>
+        <suite-file path="../../../steps/organizer/createEvent/create-virtual-event.xml"/>
+        <suite-file path="../../../steps/organizer/createPersona/create-student-persona.xml"/>
+        <suite-file path="../../../steps/organizer/sharePersona/save-and-share-persona.xml"/>
+        <suite-file path="../../../steps/organizer/registerPersona/register-to-student-persona.xml"/>
+        <suite-file path="../../../steps/organizer/confirmation/auto-approved-onscreen-confirmation.xml"/>
+        <suite-file path="../../../steps/organizer/search-for-main-entity-event.xml"/>
+        <suite-file path="../../../steps/organizer/add-crew-to-event.xml"/>
+        <suite-file path="../../../steps/organizer/registrantInfo/open-db-persona-tab.xml"/>
+        <suite-file path="../../../steps/organizer/registrantInfo/view-student-registrant-info.xml"/>
+        <suite-file path="../../../steps/organizer/registrantInfo/approved-registrant-status.xml"/>
+    </suite-files>
+</suite>

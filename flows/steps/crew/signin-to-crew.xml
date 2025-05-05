@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Sign-in To Crew">
+    <listeners>
+        <listener class-name="configs.listeners.Listener"/>
+        <listener class-name="configs.listeners.TimeoutExceptionListener"/>
+    </listeners>
+    <test name="Signin to Crew App ">
+        <parameter name="url" value="https://crew.staging.micetribe.com/"/>
+        <classes>
+            <class name="tests.organizer.OpenLinkTest"/>
+            <class name="tests.crew.authentication.SignInTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Archive Event">
+    <listeners>
+        <listener class-name="configs.listeners.Listener"/>
+        <listener class-name="configs.listeners.TimeoutExceptionListener"/>
+    </listeners>
+    <test name="Archive event">
+        <classes>
+            <!--            <class name="tests.organizer.eventsTimeline.SearchMainEntityEventTest"/>-->
+            <class name="tests.organizer.eventsTimeline.ArchiveEventTest"/>
+        </classes>
+    </test>
+</suite>

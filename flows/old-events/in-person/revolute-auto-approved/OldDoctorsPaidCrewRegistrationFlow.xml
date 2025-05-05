@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Old In person Events - 'Doctors' Paid Auto Approved Registration">
+    <suite-files>
+<!--        Setup-->
+        <suite-file path="Setup.xml"/>
+<!--        Doctors Persona-->
+        <suite-file path="organizer-doctors-persona.xml"/>
+        <suite-file path="crew-doctors-persona.xml"/>
+<!--        Close-->
+        <suite-file path="../../../TearDown.xml"/>
+    </suite-files>
+</suite>

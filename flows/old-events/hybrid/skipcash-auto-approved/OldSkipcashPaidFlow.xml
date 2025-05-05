@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Old Events - Hybrid In Sub Entity">
+    <suite-files>
+<!--        Setup-->
+        <suite-file path="Setup.xml"/>
+<!--        skip cash Persona-->
+        <suite-file path="organizer-skipcash-persona.xml"/>
+<!--        Close-->
+        <suite-file path="../../../TearDown.xml"/>
+    </suite-files>
+</suite>

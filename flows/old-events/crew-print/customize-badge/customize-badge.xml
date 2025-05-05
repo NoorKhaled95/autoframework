@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Crew Customize Badge For 'Doctors' Persona">
+    <listeners>
+        <listener class-name="configs.listeners.Listener"/>
+        <listener class-name="configs.listeners.TimeoutExceptionListener"/>
+    </listeners>
+    <suite-files>
+        <suite-file path="../../../steps/crew/signin-to-crew.xml"/>
+        <suite-file path="../../../steps/crew/open-event.xml"/>
+        <suite-file path="../../../steps/crew/open-persona-form.xml"/>
+        <suite-file path="../../../steps/crew/hide-badge-elements.xml"/>
+        <suite-file path="../../../steps/crew/open-event.xml"/>
+        <suite-file path="../../../steps/crew/show-badge-elements.xml"/>
+    </suite-files>
+</suite>
+    <!--    <test name="Open Registration Form Again">-->
+    <!--        <classes>-->
+    <!--            <class name="tests.crew.onsiteRegistration.OpenEventTest">-->
+    <!--                <methods>-->
+    <!--                    <exclude name="clickAddPersona"/>-->
+    <!--                    <exclude name="selectPersona"/>-->
+    <!--                </methods>-->
+    <!--            </class>-->
+    <!--        </classes>-->
+    <!--    </test>-->
+
+

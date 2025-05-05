@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Setup For Old Event - In person Paid Pre-Approved 'VIP'">
+    <suite-files>
+<!--        Setup-->
+        <suite-file path="Setup.xml"/>
+<!--        VIP Persona-->
+        <suite-file path="organizer-vip-persona.xml"/>
+        <suite-file path="crew-vip-persona.xml"/>
+<!--        Close-->
+        <suite-file path="../../../TearDown.xml"/>
+    </suite-files>
+</suite>
